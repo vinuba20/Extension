@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Malware Detector</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="icon.png" alt="Logo" class="logo">
+            <h1>PDF Scanner</h1>
+        </header>
+
+        <div class="toggle-section">
+            <label class="toggle-switch">
+                <input type="checkbox" id="extension-toggle" checked>
+                <span class="slider"></span>
+            </label>
+            <span class="toggle-label">Protection Active</span>
+        </div>
+
+        <div id="no-scan" class="status-box">
+            <p>No recent security scans found. Download a PDF to start scanning.</p>
+        </div>
+
+        <div id="scan-result" class="status-box hidden">
+            <div id="prediction-badge" class="badge">MALICIOUS</div>
+            <div class="info">
+                <p><strong>Confidence:</strong> <span id="confidence">0%</span></p>
+                <p><strong>Source:</strong> <span id="url-source" class="truncate"></span></p>
+            </div>
+            
+            <div class="summary-box">
+                <h3>Document Summary</h3>
+                <p id="summary-text">...</p>
+            </div>
+
+            <div class="actions">
+                <button id="block-btn" class="btn btn-danger">Delete Download</button>
+                <button id="allow-btn" class="btn btn-secondary">Download Anyway</button>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

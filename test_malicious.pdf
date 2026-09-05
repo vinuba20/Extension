@@ -1,0 +1,22 @@
+%PDF-1.1
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /OpenAction 3 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Action /S /JavaScript /JS (app.alert('Malicious PDF Test');) >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 44 >>
+stream
+BT /F1 12 Tf 100 700 Td (Testing Malware Detection) Tj ET
+endstream
+endobj
+trailer
+<< /Root 1 0 R >>
+%%EOF
