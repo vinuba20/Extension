@@ -7,12 +7,15 @@
     "downloads",
     "notifications",
     "storage",
-    "scripting"
+    "scripting",
+    "tabs",
+    "activeTab"
   ],
   "host_permissions": [
     "http://localhost:8000/*",
     "https://*/*",
-    "http://*/*"
+    "http://*/*",
+    "file:///*"
   ],
   "background": {
     "service_worker": "background.js"
